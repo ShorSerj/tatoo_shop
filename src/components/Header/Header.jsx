@@ -31,7 +31,7 @@ const Header = () => {
                   strokeLinejoin="round"
                 />
               </svg>
-              <span className={s.tel_number}>+7 911 111-11-11</span>
+              <span className={s.tel_number}>+7 911 111-11-11</span>
               <ul className={s.messengers}>
                 <li>Viber</li>
                 <li>WhatsApp</li>
@@ -71,7 +71,7 @@ const Header = () => {
           </div>
           <div className={s.users__block}>
             <div className={s.header__bucket}>
-              <span className={s.bucket_coast}>37 280 ₽</span>
+              <span className={s.bucket_coast}>37 280 ₽</span>
               <svg
                 width="20"
                 height="20"
@@ -150,8 +150,8 @@ const Header = () => {
             <div id="catalog" className={s.submenu_container}>
               <div className={s.submenu}>
                 <ul className={s.submenu__categories}>
-                  <li>По категории</li>
-                  {/* <li>По брендам</li> /*TODO finish menu */}
+                  <li>По категории</li>
+                  {/* <li>По брендам</li> /*TODO finish menu */}
                 </ul>
                 <ul className={s.submenu__text}>
                   <NavLink
@@ -170,7 +170,7 @@ const Header = () => {
                     }
                     onClick={visualContecstMenu}
                   >
-                    Наборы для татуировок
+                    Наборы для татуировок
                   </NavLink>
                   <NavLink
                     to="/catalog/tatoomachine"
@@ -233,7 +233,7 @@ const Header = () => {
                     }
                     onClick={visualContecstMenu}
                   >
-                    Педали и провода
+                    Педали и провода
                   </NavLink>
                   <NavLink
                     to="/404"
@@ -251,7 +251,7 @@ const Header = () => {
                     }
                     onClick={visualContecstMenu}
                   >
-                    Принтеры и планшеты
+                    Принтеры и планшеты
                   </NavLink>
                   <NavLink
                     to="/404"
@@ -280,7 +280,7 @@ const Header = () => {
             <li className="">Промокоды</li>
             <li className="">Скидки</li>
             <li className="">Помощь</li>
-            <li className="">О нас</li>
+            <li className="">О нас</li>
             <li className="">Контакты</li>
           </ul>
         </div>

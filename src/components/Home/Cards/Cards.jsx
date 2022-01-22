@@ -21,7 +21,7 @@ const Cards = (props) => {
         </ul>
         <div className={s.cards__content}>{cardData}</div>
         <div className={s.buttonWrapper}>
-          <Button text={'Показать ещё'} />
+          <Button text={'Показать ещё'} />
         </div>
       </div>
     </article>
