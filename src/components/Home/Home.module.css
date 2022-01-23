@@ -1,5 +1,5 @@
 .main__wrapper {
-    background: no-repeat center/cover url(../../assets/images/mainBack.jpg);
+    background: no-repeat center/cover url("../../assets/images/mainBack.jpg");
     color: #FAF6F2;
 }
 

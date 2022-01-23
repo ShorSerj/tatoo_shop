@@ -29,7 +29,7 @@ const optimization = () => {
     return config
 }
 
-const filename = ext => isDev ? `[name].${ext}` : `[name].[hash].${ext}`
+const filename = ext => isDev ? `[name].${ext}` : `[name].${ext}`
 
 const cssLoaders = extra => {
     const loaders = [{
@@ -146,7 +146,12 @@ module.exports = {
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ["file-loader"]
+                type: 'asset/resource',
+                generator: {
+                    filename: () => {
+                        return isDev ? 'img/[name][ext]' : 'img/[name].[contenthash][ext]';
+                    }
+                }
             },
             {
                 test: /\.(ttf|woff|woff2|eot)$/,
