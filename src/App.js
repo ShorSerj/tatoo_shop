@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Route, Routes} from "react-router-dom";
-import './reset.css';
-import './fonts.css';
-import './App.css';
+import './styles/reset.css'
+import './styles/fonts.css'
 import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Home from './components/Home/Home.jsx';
@@ -11,6 +10,7 @@ import Page404 from "./components/Page404/Page404";
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { initializedSuccessAC } from './redux/app-reducer.js';
+
 
 function App(prop) {
   useEffect( () => {
@@ -23,6 +23,7 @@ function App(prop) {
   return (
     <>
       <Header/>
+      <button onClick={() => console.log(Hi)}>HI</button>
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path="/catalog/*" element={<Catalog/> } />

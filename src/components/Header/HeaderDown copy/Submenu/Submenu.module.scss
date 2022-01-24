@@ -1,0 +1,70 @@
+.submenu_container{
+    position: absolute;
+    background: #F5F5F5;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+    color: #3E424B;
+    width: 618px;
+    margin-top: 15px;
+    opacity: 0;
+    visibility: hidden;
+
+    .submenu_container::before {
+        position: absolute;
+        content: '';
+        top: -35px;
+        height: 15px;
+        width: 15px;
+        border: 20px solid transparent;
+        border-bottom: 20px solid #F5F5F5;
+        left: 50px;
+    }
+
+    .submenu {
+        margin: 0 50px 50px 50px;
+
+        .submenu__categories {
+            display: flex;
+            font-weight: 600;
+            font-size: 17px;
+            line-height: 25px;
+            padding: 30px 0;
+            position: relative;
+
+            .submenu__categories li {
+                margin-right: 30px;
+                color: #BB8C5F;
+                cursor: pointer;
+            }
+
+            .submenu__categories::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: -50px;
+                border: 1px solid #D0D0D0;
+                width: 618px;
+            }
+        }
+
+        .submenu__text {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: auto auto;
+            font-size: 17px;
+            line-height: 25px;
+            color: #3E424B;
+            column-gap: 40px;
+        }
+    }
+}
+
+.submenu_container_visible {
+position: absolute;
+background: #F5F5F5;
+box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+color: #3E424B;
+width: 618px;
+margin-top: 15px;
+opacity: 1;
+visibility: visible;
+}

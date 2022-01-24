@@ -33,9 +33,10 @@
     "html-webpack-plugin": "^5.5.0",
     "less-loader": "^10.2.0",
     "mini-css-extract-plugin": "^2.5.0",
+    "sass": "^1.49.0",
     "sass-loader": "^12.4.0",
     "terser-webpack-plugin": "^5.3.0",
-    "webpack": "^5.66.0",
+    "webpack": "^5.67.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.7.3",
     "xml-loader": "^1.2.1"

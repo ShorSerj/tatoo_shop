@@ -17,6 +17,7 @@ const Home = () => {
         </div>
       </div>
       <CardsContainer />
+      <button id='hi' onClick={(e) => console.log(e)}>Click me</button>
     </main>
   )
 }

@@ -1,0 +1,16 @@
+header {
+    background-color: #050402;
+    font-size: 15px;
+    line-height: 150%;
+    color: #FAF6F2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    .header_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 1216px;
+        margin: 0 auto;
+    }
+}

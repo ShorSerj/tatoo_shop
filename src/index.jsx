@@ -5,11 +5,13 @@ import {Provider} from "react-redux";
 import store from './redux/redux-store.js';
 import App from './App';
 
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-        <App />
+        <h1 onClick={() => console.log('HI')}>Hi</h1>
+        {/* <App /> */}
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,
