@@ -1,4 +1,4 @@
-import Button from '../Home/Button/Button'
+import Button from '../Home/Button/Button.jsx'
 import s from './Page404.module.css'
 import { NavLink } from 'react-router-dom'
 

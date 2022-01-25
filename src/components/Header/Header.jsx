@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Header.module.scss'
-import HeaderUp from './HeaderUp/HeaderUp';
-import HeaderDown from './HeaderDown copy/HeaderDown';
+import HeaderUp from './HeaderUp/HeaderUp.jsx';
+import HeaderDown from './HeaderDown/HeaderDown.jsx';
 
 const Header = () => {
   return (

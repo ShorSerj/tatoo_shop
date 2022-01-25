@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './HeaderDown.module.scss'
-import { NavLink } from 'react-router-dom'
-import Submenu from './Submenu/Submenu';
+import Submenu from './Submenu/Submenu.jsx';
 import { useState } from 'react';
 
 const HeaderDown = () => {

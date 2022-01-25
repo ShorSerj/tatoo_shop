@@ -6,7 +6,7 @@ import Header from './components/Header/Header.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import Home from './components/Home/Home.jsx';
 import Catalog from './components/Catalog/Catalog.jsx';
-import Page404 from "./components/Page404/Page404";
+import Page404 from "./components/Page404/Page404.jsx";
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import { initializedSuccessAC } from './redux/app-reducer.js';
@@ -23,14 +23,13 @@ function App(prop) {
   return (
     <>
       <Header/>
-      <button onClick={() => console.log(Hi)}>HI</button>
-        <Routes>
+         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path="/catalog/*" element={<Catalog/> } />
           <Route path="/catalog/tatoomachine" element={<Catalog/> } />
           <Route path='/404' element={<Page404/>} />
         </Routes>
-      <Footer/>
+      <Footer/> 
     </>
   );
 }
@@ -38,8 +37,7 @@ function App(prop) {
 const mapStateToProps = (state) => ({
   initialized: state.app.initialized
 })
-export default compose(
-  connect(mapStateToProps, 
-    {initializedSuccessAC}
-    ))(App)
+export default
+ compose(connect(mapStateToProps, 
+    {initializedSuccessAC}))(App)
 

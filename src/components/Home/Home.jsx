@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Home.module.css'
-import CardsContainer from './Cards/CardsContainer'
+import CardsContainer from './Cards/CardsContainer.jsx'
 import Button from './Button/Button.jsx'
 
 
